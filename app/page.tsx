@@ -4,7 +4,7 @@ import Banner from "./components/Banner/Banner";
 import Footer from "./components/Footer/Footer";
 import Section from "./components/Section/Section";
 import Card from "./components/Card/Card";
-import Form from './components/Form/Form';
+
 import SectionWithBackground from "./components/Section/SectionFrom";
 
 const Home: React.FC = () => {
