@@ -1,17 +1,37 @@
 "use client";
-
+import Button from '../Button/Button';
 import Link from 'next/link';
-import { FaInstagram, FaLinkedin ,FaWhatsapp } from 'react-icons/fa';
-import { useState } from 'react';
+import { FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { useState, useEffect } from 'react';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const threshold = 100; // Ajuste este valor conforme necessário
+      if (scrollPosition > threshold) {
+        setIsDark(true);
+      } else {
+        setIsDark(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <header className="bg-gray-800 text-white p-4">
+    <header className={`fixed top-0 left-0 w-full p-4 z-50 ${isDark ? 'header-dark' : 'bg-transparent backdrop-blur-md'}`}>
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-2xl font-bold">
-          <Link href="/">MTCode Technology</Link>
+          <Link href="/">
+            <img src="../../img/logo.png" alt="MTCode Tecnologia" width={200} height={80} />
+          </Link>
         </div>
         <div className="md:hidden">
           <button
@@ -35,86 +55,57 @@ const Header: React.FC = () => {
           </button>
         </div>
         <nav className="hidden md:flex md:flex-grow md:justify-center md:space-x-4">
-          <Link href="/" className="hover:text-gray-400">
+          <Link href="/" className="text-white hover:text-gray-400">
             Início
           </Link>
-          <Link href="/About" className="hover:text-gray-400">
-            Sobre 
+          <Link href="/About" className="text-white hover:text-gray-400">
+            Sobre
           </Link>
-          <Link href="/Projects" className="hover:text-gray-400">
+          <Link href="/Projects" className="text-white hover:text-gray-400">
             Projetos
           </Link>
-          <Link href="/Contact" className="hover:text-gray-400">
+          <Link href="/Contact" className="text-white hover:text-gray-400">
             Contato
           </Link>
         </nav>
         <div className="hidden md:flex space-x-4">
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-gray-400"
-          >
+          <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
             <FaInstagram />
-          </a>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-gray-400"
-          >
+          </Link>
+          <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
             <FaWhatsapp />
-          </a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-gray-400"
-          >
+          </Link>
+          <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
             <FaLinkedin />
-          </a>
+          </Link>
         </div>
       </div>
       <div className={`md:hidden ${isOpen ? "block" : "hidden"}`}>
         <nav className="flex flex-col items-center space-y-2 mt-4">
-          <Link href="/" className="hover:text-gray-400">
+          <Link href="/" className="text-white hover:text-gray-400">
             Início
           </Link>
-          <Link href="/About" className="hover:text-gray-400">
-            Sobre 
+          <Link href="/About" className="text-white hover:text-gray-400">
+            Sobre
           </Link>
-          <Link href="/Projects" className="hover:text-gray-400">
+          <Link href="/Projects" className="text-white hover:text-gray-400">
             Projetos
           </Link>
-          <Link href="/Contact" className="hover:text-gray-400">
+          <Link href="/Contact" className="text-white hover:text-gray-400">
             Contato
           </Link>
           <div className="flex space-x-4 mt-4">
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-400"
-            >
+            <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
               <FaInstagram />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-400"
-            >
+            </Link>
+            <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
               <FaWhatsapp />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-400"
-            >
+            </Link>
+            <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
               <FaLinkedin />
-            </a>
+            </Link>
           </div>
+          <Button text="Fazer Orçamento" href="https://www.google.com" />
         </nav>
       </div>
     </header>
