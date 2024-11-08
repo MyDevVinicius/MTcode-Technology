@@ -13,7 +13,7 @@ const Home: React.FC = () => {
     <div>
       <Header />
       <Banner
-        imageUrl="/img/fundo.webp"
+        imageUrl="/img/office.jpg"
         title="MTCode Tecnologia"
         description="Inovação que Conecta o Futuro ."
         buttons={[

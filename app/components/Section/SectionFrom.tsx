@@ -5,7 +5,7 @@ import Form from '../Form/Form';
 
 const SectionWithBackground: React.FC = () => {
   return (
-    <section className="relative bg-cover bg-center bg-no-repeat min-h-screen md:h-screen" style={{ backgroundImage: "url('../../img/orcamento.jpg')" }}>
+    <section className="relative bg-cover bg-center bg-no-repeat min-h-screen md:h-screen"  id="form-section" style={{ backgroundImage: "url('../../img/work.jpg')" }}>
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative z-10 flex flex-col md:flex-row items-center justify-between h-full p-8 pb-32 md:pb-8">
         <div className="text-white md:w-1/2 p-4">

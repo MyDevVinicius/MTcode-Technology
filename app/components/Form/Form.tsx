@@ -50,7 +50,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-lg mx-auto p-4 bg-transparent rounded-lg shadow-md md:w-97%">
+    <form onSubmit={handleSubmit} className="w-full max-w-lg mx-auto p-4 bg-transparent rounded-lg shadow-md md:w-97% sm:w-full">
       <h2 className="text-xl font-bold mb-4 text-center text-white">Entre em Contato</h2>
       <div className="mb-3">
         <label className="block text-white text-sm font-bold mb-1" htmlFor="name">

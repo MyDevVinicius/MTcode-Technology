@@ -1,12 +1,29 @@
+import React from 'react';
 import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import Section from "../components/Section/Section";
+
+import SectionWithBackground from "../components/Section/SectionFrom";
+
+
+
 const About: React.FC = () => {
   return (
     <div>
       <Header />
-      <main className="container mx-auto p-4">
-        <h1 className="text-4xl font-bold">Sobre Nós</h1>
-        <p className="mt-4">Informações sobre a empresa MTCode Technology.</p>
-      </main>
+      <Section
+        title="Sobre Nossa Cultura!"
+        description="Na MTCode Tecnologia, nossa cultura é fundamentada em inovação, colaboração e excelência. Acreditamos que a tecnologia tem o poder de transformar vidas e negócios, e trabalhamos incansavelmente para criar soluções que façam a diferença."
+        imageUrl="../img/Section2.svg"
+        buttons={[
+          { text: 'Saiba Mais', href: '/mais-info' },
+          { text: 'Compre Agora', href: '/comprar' },
+        ]}
+        advantages={[]}
+      />
+     
+      <SectionWithBackground />
+      <Footer />
     </div>
   );
 };
