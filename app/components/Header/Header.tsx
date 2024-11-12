@@ -72,18 +72,16 @@ const Header: React.FC = () => {
           <Link href="/Projects" className="text-blue-500 hover:text-blue-700 font-semibold">
             Projetos
           </Link>
-          <Link href="/Contact" className="text-orange-500 hover:text-orange-700 font-semibold">
-            Contato
-          </Link>
+         
         </nav>
         <div className="hidden md:flex space-x-4">
-          <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:text-orange-700 font-semibold">
+          <Link href="#" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:text-orange-700 font-semibold">
             <FaInstagram className="w-6 h-6" /> {/* Aumentando o tamanho do ícone */}
           </Link>
-          <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-cyan-500 hover:text-cyan-700 font-semibold">
+          <Link href="#" target="_blank" rel="noopener noreferrer" className="text-cyan-500 hover:text-cyan-700 font-semibold">
             <FaWhatsapp className="w-6 h-6" /> {/* Aumentando o tamanho do ícone */}
           </Link>
-          <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 font-semibold">
+          <Link href="#" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 font-semibold">
             <FaLinkedin className="w-6 h-6" /> {/* Aumentando o tamanho do ícone */}
           </Link>
         </div>
@@ -99,17 +97,15 @@ const Header: React.FC = () => {
           <Link href="/Projects" className="text-blue-500 hover:text-blue-700 font-semibold">
             Projetos
           </Link>
-          <Link href={"/Contact"} className="text-orange-500 hover:text-orange-700 font-semibold">
-            Contato
-          </Link>
+         
           <div className="flex space-x-4 mt-4">
-            <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:text-orange-700 font-semibold">
+            <Link href="#" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:text-orange-700 font-semibold">
               <FaInstagram className="w-8 h-8" /> {/* Aumentando o tamanho do ícone */}
             </Link>
-            <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-cyan-500 hover:text-cyan-700 font-semibold">
+            <Link href="#" target="_blank" rel="noopener noreferrer" className="text-cyan-500 hover:text-cyan-700 font-semibold">
               <FaWhatsapp className="w-8 h-8" /> {/* Aumentando o tamanho do ícone */}
             </Link>
-            <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 font-semibold">
+            <Link href="#" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 font-semibold">
               <FaLinkedin className="w-8 h-8" /> {/* Aumentando o tamanho do ícone */}
             </Link>
           </div>
