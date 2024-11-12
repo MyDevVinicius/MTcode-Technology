@@ -1,32 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MTcode Technology - Site Institucional
 
-## Getting Started
-Clone o repositorio 
+Este é o repositório para o site institucional da **MTcode Technology**. O site tem como objetivo apresentar a empresa, exibir seus projetos e oferecer um formulário de contato para que visitantes possam enviar mensagens.
 
-```bash
-git clone https://github.com/MyDevVinicius/MTcode-Technology.git
+## Índice
 
-npm run dev
+- [Visão Geral](#visão-geral)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação](#instalação)
+- [Configuração](#configuração)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Contribuindo](#contribuindo)
 
-```
+## Visão Geral
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Este projeto é um site institucional simples e responsivo da MTcode Technology. Seu objetivo é promover a empresa e facilitar a comunicação com clientes e interessados através de um formulário de contato.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Funcionalidades
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Página de Apresentação**: Explica quem somos e o que fazemos.
+- **Portfólio de Projetos**: Exibe os projetos realizados e em andamento.
+- **Formulário de Contato**: Permite que visitantes enviem mensagens diretamente para a empresa.
 
-## Learn More
+## Tecnologias Utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js**: Framework React para renderização do lado do servidor e geração de sites estáticos.
+- **Tailwind CSS**: Para estilização e design responsivo.
+- **TypeScript**: Para tipagem estática e manutenção de código.
+- **Outlook API**: Utilizada para envio de e-mails no formulário de contato.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Pré-requisitos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Node.js** (versão 14 ou superior)
+- **Yarn** ou **npm**
+- Configuração de uma conta **Outlook** para recebimento de e-mails
 
-## Deploy on Vercel
+## Instalação
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/MyDevVinicius/MTcode-Technology.git
+   cd MTcode-Technology
